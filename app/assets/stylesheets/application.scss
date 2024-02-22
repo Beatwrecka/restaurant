@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+@import "pages/home";
+
+
+@import "components/header";
+@import "components/buttons";
+
+
+
+@import "config/colors";
+@import "config/fonts";
