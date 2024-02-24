@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Jonny's Plaice- Restaurant</title>
-    <meta name="description" content="ROSA is an enchanting Parallax Restaurant WordPress Theme that allows you to tell your story in an enjoyable way, perfect for restaurants or coffee shops.">
+    <title>The Regal - Fine Dining</title>
+    <meta name="description" content="The Regal is a mockup of a restaurant web page by Jonathan Dunseath">
     <meta name="viewport" content="width = device-width, initial-scale = 1, shrink-to-fit = no">
 
     <!-- Place favicon.ico in the root directory -->
@@ -20,7 +20,7 @@
     <!--FontAwesome-->
 
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/main.min.css">
+   <%#  <link rel="stylesheet" href="css/main.min.css"> %>
 </head>
 
 <body class="stop-scroll">
@@ -38,18 +38,19 @@
   <!--End loader-->
 
   <!--Start Dots-->
-  <div class="dots">
+<%#   <div class="dots">
       <div class="active one" data-x="header"></div>
       <div class="two" data-x=".recipes"></div>
       <div class="three" data-x=".fixed-image"></div>
-  </div>
+  </div> %>
   <!--End Dots-->
 
  <!--Start Header-->
   <header>
       <nav>
           <div class="logo">
-              <a href="index.html"><img src="https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988515/logo-rosa-white.png" alt="Rosa Logo"></a>
+
+              <%# <a href="index.html"><img src="https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988515/logo-rosa-white.png" alt="Rosa Logo"></a> %>
           </div>
           <div class="toggle">
               <span class="first"></span>
@@ -59,25 +60,28 @@
           <div class="navigation-bar">
               <ul>
                   <li class="active"><a href="index.html">Home<span class="underline"></span></a></li>
-                  <li><a href="#">Reservations<span class="underline"></span></a></li>
-                  <li><a href="#">Menu<span class="underline"></span></a></li>
-                  <li><a href="#">Blog<span class="underline"></span></a></li>
-                  <li><a href="#">Features<span class="underline"></span></a></li>
-                  <li><a href="#">Shop<span class="underline"></span></a></li>
+                  <li><a href="reservations">Reservations<span class="underline"></span></a></li>
+
+                  <li><a href="menu">Menu<span class="underline"></span></a></li>
+                  <%# <li><a href="#">Blog<span class="underline"></span></a></li> %>
+                  <%# <li><a href="#">Features<span class="underline"></span></a></li> %>
+                 <%#  <li><a href="#">Shop<span class="underline"></span></a></li> %>
                   <li><a href="#">Contact<span class="underline"></span></a></li>
               </ul>
           </div>
       </nav>
       <div class="text">
           <h2>Welcome to</h2>
-          <h1>JONNY'S PLAICE</h1>
+          <h1>THE REGAL</h1>
           <div class="arrow">
               <%# <span class="left"></span>
               <i class="fas fa-asterisk"></i>
               <span class="right"></span> %>
           </div>
           <span>Where fine dining is standard</span>
-          <div class="button"><button>Book a table</button></div>
+
+          <div><%= link_to 'Book a table', reservations_path, class: 'btn' %></div>
+
       </div>
       <svg class="svg-down" width="192" height="61" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve"><path fill="currentColor" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path></svg>
       <div class="arrow-down">
@@ -192,7 +196,7 @@
       <div class="text">
           <h2>ABOUT JONNY'S PLAICE</h2>
           <div><i class="fas fa-asterisk"></i></div>
-          <p>JONNY'S is a place where creativity and passion for both food and service collide. Our beautiful decor will give you a feast for your eyes and our chef's will supply the culinery feast.</p>
+          <p>The Regal is a place where creativity and passion for both food and service collide. Our beautiful decor will give you a feast for your eyes and our chef's will supply the most excuisite of culinery feasts.</p>
       </div>
       <div class="contact-container">
         <div class="social-media">
@@ -220,10 +224,10 @@
       <svg class="svg-up" width="192" height="61" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve"><path fill="#262526" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path></svg>
       <i class="fas fa-angle-double-up arrow-up"></i>
       <ul class="info">
-          <li>&copy; ROSA 2017</li>
-          <li>13 Hanway Square, London</li>
-          <li>Tel: 71494563</li>
-          <li>Handcrafted with love by <a href="#">Pixelgrade</a> Team</li>
+          <li>&copy; JONNY DUNSEATH</li>
+          <li>FULL-STACK WEB DEVELOPER</li>
+          <li>Portfolio --></li>
+          <li>jonnydunseath.com <a href="jonnydunseath.com">Portfolio</a></li>
       </ul>
       <ul class="CTA">
           <li><a href="#">PERMISSIONS AND COPYRIGHT</a></li>
@@ -234,243 +238,6 @@
 
   <!-- Add your site or application content here -->
   <script src="js/main.js"></script>
-      // constants
-
-      const body = document.querySelector("body"),
-          loader = document.querySelector(".loader-wrap"),
-          links = document.querySelectorAll('a[href="#"]'),
-          nav = document.querySelector("header nav"),
-          navToggle = document.querySelector("header nav .toggle"),
-          navSpanMiddle = document.querySelector("header nav .toggle .middle"),
-          navNavigationBar = document.querySelector("header nav .navigation-bar"),
-          navNavigationBarLi = document.querySelectorAll(
-              "header nav .navigation-bar li"
-          ),
-          headerText = document.querySelector("header .text"),
-          headerSection = document.querySelector("header"),
-          aboutSection = document.querySelector(".about-us"),
-          recipeSection = document.querySelector(".recipes"),
-          menuSection = document.querySelector(".menu"),
-          fixedImageSection = document.querySelector(".fixed-image"),
-          footerSection = document.querySelector("footer"),
-          dotOne = document.querySelector(".dots .one"),
-          dotTwo = document.querySelector(".dots .two"),
-          dotThree = document.querySelector(".dots .three"),
-          dots = document.querySelectorAll(".dots > div"),
-          logoImage = document.querySelector("header nav .logo img"),
-          svgDown = document.querySelector("header .arrow-down"),
-          svgUp = document.querySelector(".copyright .arrow-up"),
-          menuImgs = document.querySelectorAll(".menu .menu-image-container img"),
-          boxModel = document.querySelector(".menu .box-model"),
-          menuImageContainer = document.querySelector(".menu-image-container"),
-          boxModelArrow = document.querySelector(".menu .box-model .arrow"),
-          boxModelImage = document.querySelector(".menu .box-model img"),
-          pageTitle = document.querySelector("title");
-
-      // remove loader
-      function fadeOutEffect() {
-          const fadeEffect = setInterval(function() {
-              if (!loader.style.opacity) {
-                  loader.style.opacity = 1;
-              }
-              if (loader.style.opacity > 0) {
-                  loader.style.opacity -= 0.4;
-              } else {
-                  body.classList.remove('stop-scroll');
-                  loader.classList.add('remove');
-                  clearInterval(fadeEffect);
-              }
-          }, 100);
-      }
-      window.addEventListener("load", fadeOutEffect);
-
-      // prevent links click hash
-      links.forEach(link =>
-          link.addEventListener("click", function(e) {
-              e.preventDefault();
-          })
-      );
-
-      // toggle hamburger menu button
-      navToggle.addEventListener("click", () => {
-          navToggle.classList.toggle("active");
-          navSpanMiddle.classList.toggle("hide");
-          navNavigationBar.classList.toggle("show");
-      });
-
-      // show active navigationbar li
-      navNavigationBarLi.forEach(li =>
-          li.addEventListener("click", () => {
-              const arr = Array.from(li.parentElement.children);
-              arr.forEach(li => li.classList.remove("active"));
-              li.classList.add("active");
-          })
-      );
-
-      // svg-up smooth scroll
-      svgUp.addEventListener("click", () => {
-          window.scroll({
-              top: 0,
-              behavior: "smooth"
-          });
-      });
-
-      window.onscroll = function() {
-          // make navbar fixed & change logo color
-          if (window.pageYOffset > headerSection.offsetHeight - 75) {
-              nav.classList.add("active");
-              logoImage.src = "https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988525/logo-rosa.png";
-          } else {
-              nav.classList.remove("active");
-              logoImage.src = "https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988515/logo-rosa-white.png";
-          }
-
-          // header welcome fade out and in
-          if (window.pageYOffset > 0) {
-              headerText.style.opacity = -window.pageYOffset / 300 + 1;
-          }
-          // home page JS
-          if (pageTitle.text === "ROSA- Restaurant") {
-              //change dots background color
-              if (window.pageYOffset < headerSection.offsetHeight * 0.5) {
-                  dots.forEach(dot => dot.classList.remove("black"));
-                  dotTwo.classList.remove("active");
-                  dotOne.classList.add("active");
-              } else if (
-                  window.pageYOffset > headerSection.offsetHeight * 0.5 &&
-                  window.pageYOffset < recipeSection.offsetTop * 0.72
-              ) {
-                  dots.forEach(dot => dot.classList.add("black"));
-              } else if (
-                  window.pageYOffset > recipeSection.offsetTop * 0.75 &&
-                  window.pageYOffset < menuSection.offsetTop * 0.81
-              ) {
-                  dots.forEach(dot => dot.classList.remove("black"));
-                  dotOne.classList.remove("active");
-                  dotThree.classList.remove("active");
-                  dotTwo.classList.add("active");
-              } else if (
-                  window.pageYOffset > menuSection.offsetTop * 0.81 &&
-                  window.pageYOffset < fixedImageSection.offsetTop * 0.86
-              ) {
-                  dots.forEach(dot => dot.classList.add("black"));
-                  dotThree.classList.remove("active");
-                  dotTwo.classList.add("active");
-              } else if (
-                  window.pageYOffset > fixedImageSection.offsetTop * 0.86 &&
-                  window.pageYOffset < footerSection.offsetTop * 0.72
-              ) {
-                  dots.forEach(dot => dot.classList.remove("black"));
-                  dotTwo.classList.remove("active");
-                  dotThree.classList.add("active");
-              } else if (
-                  window.pageYOffset > footerSection.offsetTop * 0.72 &&
-                  window.pageYOffset < footerSection.offsetTop * 0.901
-              ) {
-                  dots.forEach(dot => dot.classList.add("black"));
-              } else if (window.pageYOffset > footerSection.offsetTop * 0.901) {
-                  dots.forEach(dot => dot.classList.remove("black"));
-              }
-          }
-      };
-
-      // home page JS
-      if (pageTitle.text === "ROSA- Restaurant") {
-          // svg-down smooth scroll
-          svgDown.addEventListener("click", () => {
-              window.scroll({
-                  top: aboutSection.offsetTop - 30,
-                  behavior: "smooth"
-              });
-          });
-
-          // dots smooth scroll
-          dots.forEach(dot =>
-              dot.addEventListener("click", function() {
-                  window.scrollTo({
-                      top: document.querySelector(this.dataset.x).offsetTop - 100,
-                      behavior: "smooth"
-                  });
-              })
-          );
-
-          // show box model
-          menuImgs.forEach(img =>
-              img.addEventListener("click", function() {
-                  const arr = Array.from(this.parentElement.parentElement.children);
-
-                  arr.forEach(div => div.classList.remove("active"));
-
-                  this.parentElement.classList.add("active");
-                  boxModel.classList.add("active");
-                  boxModelImage.src = this.src;
-                  boxModelImage.classList.add("active");
-                  body.classList.add("hide-scroll");
-              })
-          );
-
-          // box model functions
-          function boxModelFun(e) {
-              // close box model
-              if (
-                  e.code === "Escape" ||
-                  (e.target.tagName === "DIV" && !e.target.classList.contains("arrow")) ||
-                  e.target.classList.contains("close")
-              ) {
-                  boxModel.classList.remove("active");
-                  body.classList.remove("hide-scroll");
-              }
-
-              if (boxModel.classList.contains("active")) {
-                  if (
-                      e.code === "ArrowRight" ||
-                      e.code === "ArrowLeft" ||
-                      e.target.classList.contains("arrow-right") ||
-                      e.target.classList.contains("arrow-left")
-                  ) {
-                      const arr = Array.from(menuImageContainer.children);
-                      const active = arr.find(div => div.classList.contains("active"));
-
-                      // change box model image
-                      if (
-                          e.target.classList.contains("arrow-right") ||
-                          e.code === "ArrowRight"
-                      ) {
-                          if (active.nextElementSibling === null) {
-                              active.parentElement.firstElementChild.classList.add("active");
-                              boxModelImage.src =
-                                  active.parentElement.firstElementChild.firstElementChild.src;
-                          } else {
-                              active.nextElementSibling.classList.add("active");
-                              boxModelImage.src = active.nextElementSibling.firstElementChild.src;
-                          }
-                      }
-
-                      // change box model image
-                      else if (
-                          e.target.classList.contains("arrow-left") ||
-                          e.code === "ArrowLeft"
-                      ) {
-                          if (active.previousElementSibling === null) {
-                              active.parentElement.lastElementChild.classList.add("active");
-                              boxModelImage.src =
-                                  active.parentElement.lastElementChild.lastElementChild.src;
-                          } else {
-                              active.previousElementSibling.classList.add("active");
-                              boxModelImage.src =
-                                  active.previousElementSibling.firstElementChild.src;
-                          }
-                      }
-                      active.classList.remove("active");
-                  }
-              }
-          }
-
-          window.addEventListener("keydown", boxModelFun);
-          window.addEventListener("click", boxModelFun);
-          boxModelArrow.addEventListener("click", boxModelFun);
-      }
-
   <script src="js/main.min.js"></script>
 </body>
 

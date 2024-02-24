@@ -1,9 +1,13 @@
+@import "config/colors";
+@import "config/fonts";
+
 /*Start Header*/
 header {
   height: calc(100vh - 22px);
   background-size: cover;
   background-image: asset-url('tuna.jpg');
   padding: 20px 70px;
+  top: 20%;
 }
 header nav {
   position: fixed;
@@ -19,15 +23,18 @@ header nav .toggle {
   border: none;
   padding: 0;
   z-index: 21;
+
 }
 header nav .toggle:focus {
   outline: none;
 }
 header nav.active .toggle span {
-  background-color: #000;
+  /* background-color: #000; */
+
 }
 header nav .toggle.active {
   left: 32%;
+  margin-bottom: 20px;
 }
 header nav .toggle.active .first {
   top: 16px;
@@ -55,7 +62,8 @@ header nav .logo {
   padding-left: 50px;
 }
 header .navigation-bar.show {
-  width: 40%;
+  width: 60%;
+
 }
 header .navigation-bar.show a {
   color: #ccc !important;
@@ -70,7 +78,7 @@ header .navigation-bar ul li {
 header .navigation-bar a {
   text-decoration: none;
   transition: all .5s;
-  font-size: 16px;
+  font-size: 25px;
 }
 header nav.active .navigation-bar a {
   color: #000;
@@ -125,12 +133,12 @@ header .text .button button, .contact form button {
   border: none;
   padding: 9px 18px;
   letter-spacing: 2.4px;
-  font-size: 12px;
+  font-size: 20px;
   font-family: source_sans_problack, sans-serif;
   border-radius: 3px;
 }
 header .text .button button, .contact form button:focus {
-  outline: none;
+  outline: $darkest-green;
 }
 header .svg-down {
   bottom: 0;

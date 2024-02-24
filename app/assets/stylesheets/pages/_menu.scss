@@ -1,0 +1,59 @@
+@import "config/colors";
+@import "config/fonts";
+@import 'components/footer';
+
+.menu {
+  height: 1000px;
+
+  background-color: aliceblue;
+}
+
+.menu-background {
+  background-image: asset-url('blackbottle.jpg');
+  height: calc(100vh - 22px);
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 4%;
+
+}
+
+.menu-overlay {
+  /* background-color: $lighter-green; */
+
+  background-size: cover;
+  position: fixed;
+  top: 20;
+  left: 20%;
+  width: 60vw;
+  height: 80vh;
+
+}
+
+.menu-header {
+  background-color: $lightest-green;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid $dark-green;
+  text-align: center;
+  color: black;
+  text-shadow: $darker-green 2px 1px 0.3px;
+
+}
+
+
+
+.menu-text {
+  background-color: $lightest-green;
+  color: black;
+  font-size: 2rem;
+  padding: 20px;
+  text-align: center;
+ /*  margin: 20px; */
+  text-shadow: $darker-green 1px 1px 0.3px;
+
+}

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'menu/index'
+  get 'reservations/index'
   get 'pages/home'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -8,4 +10,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "pages#home"
+
+  resources :reservations;
+  get 'menu', to: 'menu#index'
+
 end

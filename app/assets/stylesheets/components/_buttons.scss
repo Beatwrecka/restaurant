@@ -1,0 +1,28 @@
+@import 'config/colors';
+@import 'config/fonts';
+
+
+
+.btn {
+  display: inline-block;
+  background-color: $lighter-green;
+  outline: $dark-green;
+  outline-width: 50px;
+  padding: 10px 20px;
+  box-shadow: 1px 1px 1px $darker-green;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px $darker-green;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+
+
+  color: white;
+  font-size: xx-large;
+  border-radius: 5%;
+
+  &:hover {
+    background-color: $darker-green;
+  }
+
+}
